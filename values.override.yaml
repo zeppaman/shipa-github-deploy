@@ -1,0 +1,25 @@
+debug: true
+create-namespace: true
+shipaCluster:
+  serviceType: ClusterIP
+  ip: 10.100.10.20
+auth:
+  adminUser: admin@shipa.io
+  adminPassword: <PASSWORD HERE>
+service:
+  nginx:
+    serviceType: ClusterIP
+    clusterIP: 10.100.10.10
+    loadBalancer: 192.168.67.2
+
+# debug: true
+# create-namespace: true
+# shipaCluster:
+#   serviceType: LoadBalancer 
+# auth:
+#   adminUser: admin@shipa.io
+#   adminPassword: <PASSWORD HERE>
+# service:
+#   nginx:
+#     serviceType: LoadBalancer
+

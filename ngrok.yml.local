@@ -1,0 +1,11 @@
+authtoken: <TOKEN HERE>
+tunnels:
+  # http:
+  #   proto: http
+  #   addr: 80
+  registry:
+    proto: http
+    addr: 5000
+  api:
+    proto: http
+    addr: 8080

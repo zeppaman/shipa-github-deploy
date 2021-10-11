@@ -1,0 +1,15 @@
+hooks:
+  restart:
+    before:
+      - python /app/hook.py
+    after:
+      - python /app/hook.py
+
+kubernetes:
+  processes:
+    web:
+      ports:
+       - name: web 
+         protocol: TCP
+         target_port: 5000
+         port: 5000
